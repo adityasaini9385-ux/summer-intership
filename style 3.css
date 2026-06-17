@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Type Selectors */
+legend {
+    color: darkblue;
+    font-size: 22px;
+}
+
+label {
+    color: darkgreen;
+    font-size: 16px;
+}
+
+/* ID Selector */
+#name {
+    background-color: #ffffcc;
+    color: black;
+}
+
+/* Button Styling */
+button {
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+}

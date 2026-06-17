@@ -1,0 +1,134 @@
+<!-- Name: Your Name | Roll No: Your Roll Number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternConnect - Internship Application Form</title>
+    
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    font-style: italic;
+}
+
+/* Type Selectors */
+legend {
+    color: darkblue;
+    font-size: 22px;
+    font-style: italic;
+}
+
+label {
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* ID Selector */
+#name {
+    background-color: #ffffcc;
+    color: black;
+    font-style: italic;
+}
+
+/* Button Styling */
+button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+}
+comment{
+    font-size: 16px;
+    font-style: italic;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1><u>InternConnect - Internship Application Form</u></h1>
+
+    <form method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}"
+                   placeholder="10-digit number">
+
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Internship Details</legend>
+
+            <label>Preferred Role:</label><br>
+
+            <input type="radio" id="web" name="role" value="Web Development">
+            <label for="web">Web Development</label>
+
+            <input type="radio" id="app" name="role" value="App Development">
+            <label for="app">App Development</label>
+
+            <input type="radio" id="data" name="role" value="Data Analytics">
+            <label for="data">Data Analytics</label>
+
+            <br><br>
+
+            <label for="skill">Skill Level:</label>
+            <input type="range" id="skill" name="skill" min="1" max="10">
+
+            <br><br>
+
+            <label for="technology">Favorite Technology:</label>
+            <input list="techlist" id="technology" name="technology">
+
+            <datalist id="techlist">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="Java">
+            </datalist>
+
+            <br><br>
+
+            <label for="message">Why do you want this internship?</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+    <br><br>
+    <comment>
+        Name=Aditya saini 
+        <br>
+        Roll No= 2502901520024
+    </comment>
+
+</body>
+</html>
